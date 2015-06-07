@@ -7,15 +7,39 @@
 
     <TextView android:text="@string/my_title" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/media_streamer"
-        android:id="@+id/button"
-        android:layout_marginTop="39dp"
-        android:layout_below="@+id/textView"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:text="@string/media_streamer"
+        android:id="@+id/button01"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/textView"
+        style="@style/buttonMedium" />
+    <Button
+        android:text="@string/super_duo1"
+        android:id="@+id/button02"
+        android:layout_below="@+id/button01"
+        style="@style/buttonMedium" />
+    <Button
+        android:text="@string/super_duo2"
+        android:id="@+id/button03"
+        android:layout_below="@+id/button02"
+        style="@style/buttonMedium" />
+    <Button
+        android:text="@string/ant_terminator"
+        android:id="@+id/button04"
+        android:layout_below="@+id/button03"
+        style="@style/buttonMedium" />
+    <Button
+        android:text="@string/materialize"
+        android:id="@+id/button05"
+        android:layout_below="@+id/button04"
+        style="@style/buttonMedium" />
+    <Button
+        android:text="@string/capstone"
+        android:id="@+id/button06"
+        android:layout_below="@+id/button05"
+        style="@style/buttonMedium" />
 </RelativeLayout>
