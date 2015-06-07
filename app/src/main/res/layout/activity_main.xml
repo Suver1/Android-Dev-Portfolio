@@ -11,35 +11,41 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
         android:text="@string/media_streamer"
         android:id="@+id/button01"
         android:layout_marginTop="58dp"
         android:layout_below="@+id/textView"
+        android:onClick="buttonOnClick"
         style="@style/buttonMedium" />
-    <Button
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
         android:text="@string/super_duo1"
         android:id="@+id/button02"
         android:layout_below="@+id/button01"
+        android:onClick="buttonOnClick"
         style="@style/buttonMedium" />
-    <Button
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
         android:text="@string/super_duo2"
         android:id="@+id/button03"
         android:layout_below="@+id/button02"
+        android:onClick="buttonOnClick"
         style="@style/buttonMedium" />
-    <Button
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
         android:text="@string/ant_terminator"
         android:id="@+id/button04"
         android:layout_below="@+id/button03"
+        android:onClick="buttonOnClick"
         style="@style/buttonMedium" />
-    <Button
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
         android:text="@string/materialize"
         android:id="@+id/button05"
         android:layout_below="@+id/button04"
+        android:onClick="buttonOnClick"
         style="@style/buttonMedium" />
-    <Button
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
         android:text="@string/capstone"
         android:id="@+id/button06"
         android:layout_below="@+id/button05"
+        android:onClick="buttonOnClick"
         style="@style/buttonMedium" />
 </RelativeLayout>

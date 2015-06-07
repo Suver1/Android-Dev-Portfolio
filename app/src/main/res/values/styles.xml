@@ -4,7 +4,7 @@
     <style name="AppTheme" parent="@android:style/Theme.Holo">
         <!-- Customize your theme here. -->
     </style>
-    <style name="buttonMedium" parent="@android:style/Theme.Holo">
+    <style name="buttonMedium">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">20dp</item>
