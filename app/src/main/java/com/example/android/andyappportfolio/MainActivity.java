@@ -41,30 +41,31 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
     public void buttonOnClick(View view) {
-        Context context = getApplicationContext();
-        CharSequence buttonText = "";
+        int buttonNameId = 0;
         switch(view.getId()) {
             case R.id.button01:
-                buttonText = getResources().getString(R.string.media_streamer);
+                buttonNameId = R.string.media_streamer;
                 break;
             case R.id.button02:
-                buttonText = getResources().getString(R.string.super_duo1);
+                buttonNameId = R.string.super_duo1;
                 break;
             case R.id.button03:
-                buttonText = getResources().getString(R.string.super_duo2);
+                buttonNameId = R.string.super_duo2;
                 break;
             case R.id.button04:
-                buttonText = getResources().getString(R.string.ant_terminator);
+                buttonNameId = R.string.ant_terminator;
                 break;
             case R.id.button05:
-                buttonText = getResources().getString(R.string.materialize);
+                buttonNameId = R.string.materialize;
                 break;
             case R.id.button06:
-                buttonText = getResources().getString(R.string.capstone);
+                buttonNameId = R.string.capstone;
                 break;
         }
-        if (buttonText.length() != 0) {
-            CharSequence toastText = "This button will open " + buttonText + "!";
+        if (buttonNameId != 0) {
+            // Show toast for each button click
+            Context context = getApplicationContext();
+            CharSequence toastText = "This button will open " + getResources().getString(buttonNameId) + "!";
             int duration = Toast.LENGTH_SHORT;
             Toast toast = Toast.makeText(context, toastText, duration);
             toast.show();
