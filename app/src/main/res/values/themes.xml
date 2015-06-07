@@ -1,0 +1,5 @@
+<resources>
+    <style name="CyanTheme" parent="android:style/Theme.NoTitleBar">
+        <item name="android:buttonStyle">@style/btnMediumCustom</item>
+    </style>
+</resources>
