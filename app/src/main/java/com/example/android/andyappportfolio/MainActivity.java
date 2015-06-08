@@ -2,16 +2,9 @@ package com.example.android.andyappportfolio;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
-
-import com.squareup.picasso.Picasso;
-
 
 public class MainActivity extends Activity {
 
@@ -25,7 +18,6 @@ public class MainActivity extends Activity {
         int btnNameId = 0;
         switch(view.getId()) {
             case R.id.mediaStreamerBtn:
-                btnNameId = R.string.media_streamer;
                 break;
             case R.id.superDuo1Btn:
                 btnNameId = R.string.super_duo1;
