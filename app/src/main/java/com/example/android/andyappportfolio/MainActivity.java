@@ -18,6 +18,7 @@ public class MainActivity extends Activity {
         int btnNameId = 0;
         switch(view.getId()) {
             case R.id.mediaStreamerBtn:
+                setContentView(R.layout.activity_spotify_streamer);
                 break;
             case R.id.superDuo1Btn:
                 btnNameId = R.string.super_duo1;

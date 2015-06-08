@@ -9,4 +9,7 @@
     <string name="ant_terminator">Build It Bigger</string>
     <string name="materialize">XYZ Reader</string>
     <string name="capstone">Capstone</string>
+    <string name="title_activity_spotify_streamer">Spotify Streamer</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>
