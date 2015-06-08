@@ -26,39 +26,25 @@ public class MainActivity extends Activity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
     public void btnOnClick(View view) {
         int btnNameId = 0;
         switch(view.getId()) {
-            case R.id.button01:
+            case R.id.mediaStreamerBtn:
                 btnNameId = R.string.media_streamer;
                 break;
-            case R.id.button02:
+            case R.id.superDuo1Btn:
                 btnNameId = R.string.super_duo1;
                 break;
-            case R.id.button03:
+            case R.id.superDuo2Btn:
                 btnNameId = R.string.super_duo2;
                 break;
-            case R.id.button04:
+            case R.id.antTerminatorBtn:
                 btnNameId = R.string.ant_terminator;
                 break;
-            case R.id.button05:
+            case R.id.materializeBtn:
                 btnNameId = R.string.materialize;
                 break;
-            case R.id.button06:
+            case R.id.capstoneBtn:
                 btnNameId = R.string.capstone;
                 break;
         }
