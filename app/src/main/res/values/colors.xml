@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colors ranges from 0 (light) to 1000 (dark). 500 is primary color.
+    read more: http://www.google.com/design/spec/style/color.html#color-color-palette -->
+    <color name="cyan50">#E0F7FA</color>
+    <color name="cyan100">#B2EBF2</color>
+    <color name="cyan200">#80DEEA</color>
+    <color name="cyan300">#4DD0E1</color>
+    <color name="cyan400">#26C6DA</color>
+    <color name="cyan500">#00BCD4</color>
+    <color name="cyan600">#00ACC1</color>
+    <color name="cyan700">#0097A7</color>
+    <color name="cyan800">#00838F</color>
+    <color name="cyan900">#006064</color>
+</resources>
