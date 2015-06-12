@@ -2,11 +2,15 @@ package com.example.android.andyappportfolio;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +22,16 @@ public class MainActivity extends Activity {
         int btnNameId = 0;
         switch(view.getId()) {
             case R.id.mediaStreamerBtn:
-                setContentView(R.layout.activity_spotify_streamer);
+                PackageManager pm = getPackageManager();
+                try {
+                    String packageName = "no.ahoi.spotify.spotifystreamer";
+                    Intent launchIntent = pm.getLaunchIntentForPackage(packageName);
+                    startActivity(launchIntent);
+                }
+                catch (Exception e) {
+                    Log.e(TAG, "could not launch spotify streamer: " + e);
+                }
+                btnNameId = R.string.media_streamer;
                 break;
             case R.id.superDuo1Btn:
                 btnNameId = R.string.super_duo1;
