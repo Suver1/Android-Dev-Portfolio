@@ -20,7 +20,7 @@
         android:onClick="btnOnClick"
         style="@style/btnMediumCustom" />
     <Button xmlns:android="http://schemas.android.com/apk/res/android"
-        android:text="@string/super_duo1"
+        android:text="@string/football_scores"
         android:id="@+id/superDuo1Btn"
         android:layout_below="@+id/mediaStreamerBtn"
         android:onClick="btnOnClick"

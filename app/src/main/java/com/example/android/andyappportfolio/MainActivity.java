@@ -20,21 +20,15 @@ public class MainActivity extends Activity {
 
     public void btnOnClick(View view) {
         int btnNameId = 0;
+        String packageName = null;
         switch(view.getId()) {
             case R.id.mediaStreamerBtn:
-                PackageManager pm = getPackageManager();
-                try {
-                    String packageName = "no.ahoi.spotify.spotifystreamer";
-                    Intent launchIntent = pm.getLaunchIntentForPackage(packageName);
-                    startActivity(launchIntent);
-                }
-                catch (Exception e) {
-                    Log.e(TAG, "could not launch spotify streamer: " + e);
-                }
+                packageName = getResources().getString(R.string.spotify_steamer_package);
                 btnNameId = R.string.media_streamer;
                 break;
             case R.id.superDuo1Btn:
-                btnNameId = R.string.super_duo1;
+                packageName = getResources().getString(R.string.football_scores_package);
+                btnNameId = R.string.football_scores;
                 break;
             case R.id.superDuo2Btn:
                 btnNameId = R.string.super_duo2;
@@ -49,13 +43,24 @@ public class MainActivity extends Activity {
                 btnNameId = R.string.capstone;
                 break;
         }
-        if (btnNameId != 0) {
-            // Show toast for each button click
+        // Toast if package don't exist
+        if (btnNameId != 0 && packageName == null) {
             Context context = getApplicationContext();
             CharSequence toastText = "This button will open " + getResources().getString(btnNameId) + "!";
             int duration = Toast.LENGTH_SHORT;
             Toast toast = Toast.makeText(context, toastText, duration);
             toast.show();
+        }
+        // Open app
+        if (packageName != null) {
+            PackageManager pm = getPackageManager();
+            try {
+                Intent launchIntent = pm.getLaunchIntentForPackage(packageName);
+                startActivity(launchIntent);
+            }
+            catch (Exception e) {
+                Log.e(TAG, "could not launch " + packageName + ". Error: " + e.toString());
+            }
         }
     }
 }
