@@ -23,8 +23,8 @@ public class MainActivity extends Activity {
         String packageName = null;
         switch(view.getId()) {
             case R.id.mediaStreamerBtn:
-                packageName = getResources().getString(R.string.spotify_steamer_package);
-                btnNameId = R.string.media_streamer;
+                packageName = getResources().getString(R.string.spotify_streamer_package);
+                btnNameId = R.string.spotify_streamer;
                 break;
             case R.id.superDuo1Btn:
                 packageName = getResources().getString(R.string.football_scores_package);

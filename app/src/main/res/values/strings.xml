@@ -3,8 +3,8 @@
 
     <string name="my_title">My Nanodegree Apps!</string>
     <string name="action_settings">Settings</string>
-    <string name="media_streamer">Spotify Streamer</string>
-    <string name="spotify_steamer_package">no.ahoi.spotify.spotifystreamer</string>
+    <string name="spotify_streamer">Spotify Streamer</string>
+    <string name="spotify_streamer_package">no.ahoi.spotify.spotifystreamer</string>
     <string name="football_scores">Football Scores</string>
     <string name="football_scores_package">barqsoft.footballscores</string>
     <string name="super_duo2">Library App</string>

@@ -13,7 +13,7 @@
         android:layout_centerHorizontal="true" />
 
     <Button xmlns:android="http://schemas.android.com/apk/res/android"
-        android:text="@string/media_streamer"
+        android:text="@string/spotify_streamer"
         android:id="@+id/mediaStreamerBtn"
         android:layout_marginTop="40dp"
         android:layout_below="@+id/textView"
