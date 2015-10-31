@@ -31,7 +31,8 @@ public class MainActivity extends Activity {
                 btnNameId = R.string.football_scores;
                 break;
             case R.id.superDuo2Btn:
-                btnNameId = R.string.super_duo2;
+                btnNameId = R.string.alexandria;
+                packageName = getResources().getString(R.string.alexandria_package);
                 break;
             case R.id.antTerminatorBtn:
                 btnNameId = R.string.ant_terminator;

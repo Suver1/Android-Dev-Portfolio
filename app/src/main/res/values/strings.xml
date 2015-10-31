@@ -7,7 +7,8 @@
     <string name="spotify_streamer_package">no.ahoi.spotify.spotifystreamer</string>
     <string name="football_scores">Football Scores</string>
     <string name="football_scores_package">barqsoft.footballscores</string>
-    <string name="super_duo2">Library App</string>
+    <string name="alexandria">Alexandria</string>
+    <string name="alexandria_package">it.jaschke.alexandria</string>
     <string name="ant_terminator">Build It Bigger</string>
     <string name="materialize">XYZ Reader</string>
     <string name="capstone">Capstone</string>

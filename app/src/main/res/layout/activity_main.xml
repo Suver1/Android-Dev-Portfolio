@@ -26,7 +26,7 @@
         android:onClick="btnOnClick"
         style="@style/btnMediumCustom" />
     <Button xmlns:android="http://schemas.android.com/apk/res/android"
-        android:text="@string/super_duo2"
+        android:text="@string/alexandria"
         android:id="@+id/superDuo2Btn"
         android:layout_below="@+id/superDuo1Btn"
         android:onClick="btnOnClick"
