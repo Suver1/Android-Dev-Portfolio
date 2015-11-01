@@ -34,8 +34,9 @@ public class MainActivity extends Activity {
                 btnNameId = R.string.alexandria;
                 packageName = getResources().getString(R.string.alexandria_package);
                 break;
-            case R.id.antTerminatorBtn:
-                btnNameId = R.string.ant_terminator;
+            case R.id.buildItBigger:
+                btnNameId = R.string.build_it_bigger;
+                packageName = getResources().getString(R.string.build_it_bigger_package);
                 break;
             case R.id.materializeBtn:
                 btnNameId = R.string.materialize;

@@ -9,7 +9,8 @@
     <string name="football_scores_package">barqsoft.footballscores</string>
     <string name="alexandria">Alexandria</string>
     <string name="alexandria_package">it.jaschke.alexandria</string>
-    <string name="ant_terminator">Build It Bigger</string>
+    <string name="build_it_bigger">Build It Bigger</string>
+    <string name="build_it_bigger_package">com.udacity.gradle.builditbigger.free</string>
     <string name="materialize">XYZ Reader</string>
     <string name="capstone">Capstone</string>
     <string name="title_activity_spotify_streamer">Spotify Streamer</string>
